@@ -913,3 +913,139 @@ body {
     flex-wrap: wrap;
   }
 }
+
+/* Footer Styles */
+.footer {
+  background: #1A1614;
+  color: #F2EDE4;
+  padding: 60px 0 0 0;
+  margin-top: 40px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 48px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(242, 237, 228, 0.1);
+}
+
+/* Brand Column */
+.footer-brand h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #F2EDE4;
+  letter-spacing: -0.025em;
+  margin-bottom: 8px;
+}
+
+.footer-tagline {
+  font-family: 'Instrument Serif', serif;
+  font-size: 1.125rem;
+  font-style: italic;
+  color: rgba(242, 237, 228, 0.6);
+  margin-bottom: 12px;
+}
+
+.footer-description {
+  font-size: 0.9rem;
+  color: rgba(242, 237, 228, 0.5);
+  line-height: 1.6;
+  max-width: 300px;
+}
+
+/* Link Columns */
+.footer-links h3,
+.footer-contact h3 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(242, 237, 228, 0.4);
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.footer-links a,
+.footer-contact a {
+  display: block;
+  color: rgba(242, 237, 228, 0.7);
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 6px 0;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover,
+.footer-contact a:hover {
+  color: #F2EDE4;
+}
+
+.footer-contact .footer-location {
+  color: rgba(242, 237, 228, 0.4);
+  font-size: 0.85rem;
+  padding: 6px 0;
+}
+
+/* Bottom Bar */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+  font-size: 0.8rem;
+  color: rgba(242, 237, 228, 0.3);
+}
+
+.footer-bottom-links {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-bottom-links a {
+  color: rgba(242, 237, 228, 0.3);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-bottom-links a:hover {
+  color: rgba(242, 237, 228, 0.7);
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .footer-description {
+    max-width: 100%;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+
+  .footer-bottom-links {
+    gap: 16px;
+  }
+}
+
+/* App Layout */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+}
